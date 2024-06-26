@@ -40,7 +40,6 @@ h1 {
 }
 
 .btn {
-	/* background-color: var(--fg); */
 	border-radius: 0.25em;
 	box-shadow: inset 0px 0px 0px 2px var(--fg);
 	color: var(--fg);
@@ -55,24 +54,15 @@ h1 {
 .btn:hover {
 	background-color: var(--fg);
 	color: var(--bg);
-	/* box-shadow: inset 0px 0px 0px 2px var(--fg); */
 }
 
-.btn-control {
-	display: flex;
-	gap: 0.375em;
-	margin-bottom: 1.5em;
-}
-
-.btn-control>.btn {
+.timeline .btn {
 	flex: 1 1 auto;
 }
 
 .timeline {
 	margin: auto;
-	padding: 0 1.5em;
 	width: 100%;
-	max-width: 36em;
 }
 
 .timeline__arrow {
@@ -165,14 +155,29 @@ h1 {
 .timeline__item-body-content {
 	background-color: hsl(var(--hue), 10%, 50%, 0.2);
 	opacity: 0;
-	padding: 0.5em 0.75em;
+	padding: 0.75rem 1rem;
 	visibility: hidden;
 	transition:
 		opacity var(--trans-dur) var(--trans-timing),
 		visibility var(--trans-dur) steps(1, end);
 }
 
-.timeline__item-p {
+.timeline__item-body-content.bio {
+	display: flex;
+	gap: 1rem;
+	opacity: 100;
+	visibility: visible;
+	border-radius: 0.375em;
+}
+
+.timeline__item-body-content p,
+.timeline__item-body-content ul {
+	margin-bottom: 1rem;
+	font-size: 0.8rem;
+}
+
+.timeline__item-body-content p:last-child,
+.timeline__item-body-content ul:last-child {
 	margin: 0;
 }
 
@@ -198,6 +203,12 @@ h1 {
 
 .timeline__arrow[aria-expanded="true"] .timeline__arrow-icon {
 	transform: rotate(0);
+}
+
+@media (min-width: 992px) {
+	.container-sm {
+		max-width: 960px;
+	}
 }
 
 /* Dark theme */
