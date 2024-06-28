@@ -157,12 +157,16 @@ a.icon-link {
 .bio {
 	display: flex;
 	gap: 1rem;
+	flex-wrap: wrap;
+    flex-direction: row;
+	max-width: 55vw;
 }
 
 .bio>div {
 	background-color: var(--textopague);
 	padding: 1rem;
 	border-radius: 1rem;
+	flex: 1 1 0px;
 }
 
 .bio p {
@@ -239,6 +243,16 @@ a.icon-link {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+}
+
+@media (max-width: 767.98px) {
+	.flex__content {
+		margin-left: 40px;
+	}
+	.text--big {
+		font-size: 4rem;
+		line-height: 1;
+	}
 }
 
 /* Animate-START point */
