@@ -11,233 +11,98 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Styling -->
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&amp;display=swap'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:400,700'>
+    <link rel="stylesheet" href="./main.css">
 
     <!-- Favicon -->
     <link rel="icon" href="img/box.svg">
 </head>
 
 <body>
-    <svg display="none">
-        <symbol id="arrow">
-            <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-        </symbol>
-    </svg>
-
-    <h1 class="fw-bold my-5"><i class="bi bi-box me-1"></i> IAT 336 | Team Panda</h1>
-
-    <div class="container-sm">
-        <div id="timeline" class="timeline">
-            <div class="d-flex mb-3 gap-2">
-                <button class="btn" type="button" data-action="expand">Expand All</button>
-                <button class="btn" type="button" data-action="collapse">Collapse All</button>
-            </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name" aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item1-name" class="timeline__meta">
-                        <span class="timeline__date">June 13</span><br>
-                        <strong class="timeline__title">Week 1 - Project Brief</strong>
-                    </span>
+    <div class="slider__warpper">
+        <div class="flex__container flex--pikachu flex--active" data-slide="1">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">IAT 336 ｜ Summer 2024</p>
+                    <h1 class="text--big">Guitar Strummer</h1>
                 </div>
-                <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <h4 class="fw-bold m-0 mb-2">Description from user:</h4>
-                        <p>My dad loved playing guitar and he suffered a Traumatic Brain Injury (TBI) and lost functioning of his right wrist. He still can play all the chords with his left hand but cannot strum the strings with his right hand. I am reaching out to this site to see if you can design a tool that allows my dad to strum a guitar again.</p>
-                        <h4 class="fw-bold m-0 mt-3 mb-2">Persona:</h4>
-                        <div class="d-flex gap-3">
-                            <div>
-                                <p><strong>Louis Matthews, 51</strong></p>
-                                <p><strong>Background:</strong><br>Louis went to trade school. He is married and is a father of 2 daughters. He works in construction and had an accident. He suffers from TBI/ heart attack (this can be changed) which made the movement on his right arm and wrist restrictive.</p>
-                                <p><strong>Disability:</strong><br>It has been 8 months since he had his accident. He can move his arm and forearm slowly but not strong nor fast enough to strum the guitar. His wrist can’t be rotated or moved.</p>
-                            </div>
-                            <div>
-                                <p><strong>Environment/Scenario:</strong><br>Before the accident he used to play in a band that performs at the local pub/bar, he wants to continue being a guitarist.</p>
-                                <p><strong>Activity:</strong><br>The primary function of the device would be to help him strum the guitar. Secondary function would be to help him hold certain items.</p>
-                                <p><strong>Frustrations:</strong><br>He still has the ability to play chords with his left hand, however he’s unable to move his right arm/hand in order to strum the guitar. The feeling of being able to reach the strings and chords on the guitar, but totally losing the ability to produce sound.</p>
-                            </div>
+                <p class="text__background">blog</p>
+            </div>
+        </div>
+        <div class="flex__container flex--piplup animate--start" data-slide="2">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">to do</p>
+                    <h1 class="text--big">to do</h1>
+                    <p class="text--normal">to do</p>
+                </div>
+                <p class="text__background">background</p>
+            </div>
+        </div>
+        <div class="flex__container flex--blaziken animate--start" data-slide="3">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">timeline</p>
+                    <h1 class="text--big">Project Timeline</h1>
+                    <p class="text--normal">This timeline captures the evolution of our project. Explore how our ideas transformed, how we navigated through research phases, design iterations, and implementation strategies.</p>
+                    <a href="timeline.html" class="icon-link icon-link-hover align-items-baseline">Go to timeline <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <p class="text__background">timeline</p>
+            </div>
+        </div>
+        <div class="flex__container flex--dialga animate--start" data-slide="4">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">to do</p>
+                    <h1 class="text--big">to do</h1>
+                    <p class="text--normal">to do</p>
+                </div>
+                <p class="text__background">final</p>
+            </div>
+        </div>
+        <div class="flex__container flex--zekrom animate--start" data-slide="5">
+            <div class="flex__item flex__item--left">
+                <div class="flex__content">
+                    <p class="text--sub">team</p>
+                    <h1 class="text--big">Our Team</h1>
+                    <!-- <h5 class="team-name">Team Panda</h5> -->
+                    <div class="bio text-center mt-3">
+                        <div class="align-items-center">
+                            <img src="img/ms.jpg" class="rounded-1" width="100">
+                            <p>Michael Song</p>
+                        </div>
+                        <div class="align-items-center">
+                            <img src="img/lo.jpg" class="rounded-1" width="100">
+                            <p>Lynnsey Ong</p>
+                        </div>
+                        <div class="align-items-center">
+                            <img src="img/pc.jpg" class="rounded-1" width="100">
+                            <p>Priscilla Cho</p>
+                        </div>
+                        <div class="align-items-center">
+                            <img src="img/vn.jpg" class="rounded-1" width="100">
+                            <p>Vera Ni</p>
                         </div>
                     </div>
                 </div>
+                <p class="text__background">team</p>
             </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name" aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item2-name" class="timeline__meta">
-                        <span class="timeline__date">June 20</span><br>
-                        <strong class="timeline__title">Week 2 - Next Steps</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">This week, we are tasked to work on sketches for the assistive device focusing on:</p>
-                        <ul>
-                            <li>Material identification</li>
-                            <li>Functional aspects (interaction) and human factors</li>
-                            <li>Aesthetic considerations (form)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name" aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item3-name" class="timeline__meta">
-                        <span class="timeline__date">June 27</span><br>
-                        <strong class="timeline__title">Week 3 - Persona and Human</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">Content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name" aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item4-name" class="timeline__meta">
-                        <span class="timeline__date">July 4</span><br>
-                        <strong class="timeline__title">Week 4 - Initial Ideation</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">Content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name" aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item5-name" class="timeline__meta">
-                        <span class="timeline__date">July 11</span><br>
-                        <strong class="timeline__title">Week 5 - Physical Ideation Models</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">Content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item6-name" class="timeline__meta">
-                        <span class="timeline__date">July 18</span><br>
-                        <strong class="timeline__title">Week 6 - Prototype 1:1 Model</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">Content.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline__item">
-                <div class="timeline__item-header">
-                    <button class="timeline__arrow" type="button" id="item7" aria-labelledby="item6-name" aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="7">
-                        <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span class="timeline__dot"></span>
-                    <span id="item6-name" class="timeline__meta">
-                        <span class="timeline__date">July 25</span><br>
-                        <strong class="timeline__title">Week 7 - Technical Sign-off</strong>
-                    </span>
-                </div>
-                <div class="timeline__item-body" id="item7-ctrld" role="region" aria-labelledby="item7" aria-hidden="true">
-                    <div class="timeline__item-body-content">
-                        <p class="timeline__item-p">Content.</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
+    </div>
 
-        <h3 class="fw-bold mt-5 mb-3">Team Bios</h3>
-
-        <section class="d-flex flex-column gap-3">
-            <div class="timeline__item-body-content bio align-items-center p-3">
-                <img src="img/ms.jpg" class="rounded-1" width="100">
-                <div>
-                    <h4 class="fw-bold">Michael Song</h4>
-                    <p class="timeline__item-p">Michael is a passionate graphic designer, with a keen interest in coding and crafting modern and responsive products.</p>
-                </div>
-            </div>
-
-            <div class="timeline__item-body-content bio align-items-center p-3">
-                <img src="img/lo.jpg" class="rounded-1" width="100">
-                <div>
-                    <h4 class="fw-bold">Lynnsey Ong</h4>
-                    <p class="timeline__item-p">Lynnsey is a SIAT undergrad student who is aiming for a UX/UI job. She loves to play Volleyball, make jewellery and spend time with her friends and family.</p>
-                </div>
-            </div>
-
-            <div class="timeline__item-body-content bio align-items-center p-3">
-                <img src="img/pc.jpg" class="rounded-1" width="100">
-                <div>
-                    <h4 class="fw-bold">Priscilla Cho</h4>
-                    <p class="timeline__item-p">Priscilla is a SIAT major who is passionate about creating practical tools and improving user experience for users' daily routine. She also loves to drinking overly sweet coffees, watching animal documentaries and read.</p>
-                </div>
-            </div>
-
-            <div class="timeline__item-body-content bio align-items-center px-3">
-                <img src="img/vn.jpg" class="rounded-1" width="100">
-                <div>
-                    <h4 class="fw-bold">Vera Ni</h4>
-                    <p class="timeline__item-p">Vera is an undergraduate student majoring in SIAT with a keen interest in learning more about product design. She enjoys playing video games and taking long naps during the day, which gives her more energy to focus on her work in the afternoon and evening.</p>
-                </div>
-            </div>
-        </section>
-
-        <footer class="border-top mt-5">
-            <p class="timeline__date text-body-secondary text-center pt-3 pb-5">© 2024 Team Panda</p>
-        </footer>
+    <div class="slider__navi">
+        <a href="#" class="slide-nav active" data-slide="1">home
+        </a>
+        <a href="#" class="slide-nav" data-slide="2">background</a>
+        <a href="#" class="slide-nav" data-slide="3">timeline</a>
+        <a href="#" class="slide-nav" data-slide="4">final</a>
+        <a href="#" class="slide-nav" data-slide="5">team</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script type="module" src="./script.js"></script>
+    <script type="module" src="./slider-script.js"></script>
 </body>
 
 </html>

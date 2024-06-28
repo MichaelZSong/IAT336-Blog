@@ -23,7 +23,7 @@ a {
 body,
 button {
 	color: var(--fg);
-	font: 1em/1.5 "IBM Plex Sans", sans-serif;
+	font: 1em/1.5 "Poppins", sans-serif;
 }
 
 body {
