@@ -9,6 +9,15 @@ $(document).ready(function () {
         $('.slide-nav').removeClass('active');
         $(this).addClass('active');
 
+        var slideValue = $(this).attr('data-slide');
+        console.log(slideValue);
+        
+        if (slideValue == 2 || slideValue == 2) {
+            $('.flex__item').addClass('flex__item--oversize');
+        } else {
+            $('.flex__item').removeClass('flex__item--oversize');
+        }
+
         if (current === next) {
             return false;
         } else {

@@ -56,7 +56,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	min-height: 100vh;
-	overflow-y: hidden;
+	/* overflow-y: hidden; */
 	overflow-x: hidden;
 }
 
@@ -78,7 +78,7 @@ body {
 	-ms-justify-content: flex-start;
 	-o-justify-content: flex-start;
 	justify-content: flex-start;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	z-index: 1;
 }
@@ -120,12 +120,19 @@ body {
 	font-weight: 700;
 	white-space: nowrap;
 	overflow: hidden;
+	z-index: 0;
 }
 
 .flex__item {
 	height: 100vh;
 	color: var(--textcolour);
 	transition: transform 0.1s linear;
+}
+
+.flex__item--oversize {
+	padding: 3rem 0;
+	height: auto;
+	min-height: 100vh;
 }
 
 .flex__item--left {
@@ -239,10 +246,12 @@ a.icon-link {
 
 .flex__content {
 	margin-left: 80px;
-	width: calc(100% - 180px);
+	width: calc(100% - 210px);
+	max-width: 1000px;
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 	transition: transform 0.2s linear 0.2s, opacity 0.1s linear 0.2s;
+	z-index: 99;
 }
 
 @media (max-width: 767.98px) {
