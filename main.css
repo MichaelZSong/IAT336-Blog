@@ -20,7 +20,7 @@
 }
 
 .slider__navi {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	right: 20px;
 	transform: translateY(-50%);
@@ -130,7 +130,7 @@ body {
 }
 
 .flex__item--oversize {
-	padding: 3rem 0;
+	padding: 3rem 0 10rem 0;
 	height: auto;
 	min-height: 100vh;
 }
@@ -161,23 +161,18 @@ a.icon-link {
 	margin-top: 35px;
 }
 
-.bio {
-	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
-    flex-direction: row;
-	max-width: 55vw;
-}
-
 .bio>div {
 	background-color: var(--textopague);
 	padding: 1rem;
 	border-radius: 1rem;
-	flex: 1 1 0px;
+}
+
+.bio img {
+	margin: 0 0 0.5rem 0;
 }
 
 .bio p {
-	margin: 0.5rem 0 0 0;
+	margin: 0;
 }
 
 .flex__item--right {
@@ -194,53 +189,53 @@ a.icon-link {
 	opacity: 1;
 }
 
-/* Piplup */
+/* two */
 
-.flex--piplup .flex__item--left {
+.flex--two .flex__item--left {
 	background: var(--bg2);
 }
 
-.flex--piplup .flex__item--right {
+.flex--two .flex__item--right {
 	background: #d3eaef;
 }
 
-/* Pikachu */
+/* one */
 
-.flex--pikachu .flex__item--left {
+.flex--one .flex__item--left {
 	background: var(--bg1);
 }
 
-.flex--pikachu .flex__item--right {
+.flex--one .flex__item--right {
 	background: #f4ecc5;
 }
 
-/* Blaziken */
+/* three */
 
-.flex--blaziken .flex__item--left {
+.flex--three .flex__item--left {
 	background: var(--bg3);
 }
 
-.flex--blaziken .flex__item--right {
+.flex--three .flex__item--right {
 	background: #ffebcd;
 }
 
-/* Dialga */
+/* four */
 
-.flex--dialga .flex__item--left {
+.flex--four .flex__item--left {
 	background: var(--bg4);
 }
 
-.flex--dialga .flex__item--right {
+.flex--four .flex__item--right {
 	background: #ade8f7;
 }
 
-/* Zekrom */
+/* five */
 
-.flex--zekrom .flex__item--left {
+.flex--five .flex__item--left {
 	background: var(--bg5);
 }
 
-.flex--zekrom .flex__item--right {
+.flex--five .flex__item--right {
 	background: #a7bcbb;
 }
 
@@ -258,6 +253,7 @@ a.icon-link {
 	.flex__content {
 		margin-left: 40px;
 	}
+
 	.text--big {
 		font-size: 4rem;
 		line-height: 1;
@@ -294,4 +290,13 @@ a.icon-link {
 .flex__container.animate--end .pokemon__img {
 	transform: translate3d(200px, 0, 0);
 	opacity: 0;
+}
+
+html {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+	display: none;
 }

@@ -12,15 +12,15 @@ $(document).ready(function () {
         var slideValue = $(this).attr('data-slide');
         console.log(slideValue);
         
-        if (slideValue == 2 || slideValue == 2) {
-            $('.flex__item').addClass('flex__item--oversize');
-        } else {
-            $('.flex__item').removeClass('flex__item--oversize');
+        $('.flex__item').removeClass('flex__item--oversize');
+        if (slideValue == 2) {
+            $('.flex__container[data-slide="' + slideValue + '"] .flex__item').addClass('flex__item--oversize');
         }
 
         if (current === next) {
             return false;
         } else {
+            $(window).scrollTop(0);
             $('.slider__warpper').find('.flex__container[data-slide=' + next + ']').addClass('flex--preStart');
             $('.flex--active').addClass('animate--end');
             setTimeout(function () {

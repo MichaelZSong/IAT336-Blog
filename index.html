@@ -21,7 +21,7 @@
 
 <body>
     <div class="slider__warpper">
-        <div class="flex__container flex--pikachu flex--active" data-slide="1">
+        <div class="flex__container flex--one flex--active" data-slide="1">
             <div class="flex__item flex__item--left">
                 <div class="flex__content">
                     <p class="text--sub">IAT 336 ｜ Summer 2024</p>
@@ -30,14 +30,14 @@
                 <p class="text__background">blog</p>
             </div>
         </div>
-        <div class="flex__container flex--piplup animate--start" data-slide="2">
+        <div class="flex__container flex--two animate--start" data-slide="2">
             <div class="flex__item flex__item--left">
                 <div class="flex__content">
                     <p class="text--sub">background</p>
                     <h1 class="text--big">Background</h1>
                     <h3 class="pt-5">Description from User:</h3>
-                    <p>My dad loved playing guitar and he suffered a Traumatic Brain Injury (TBI) and lost functioning of his right wrist. He still can play all the chords with his left hand but cannot strum the strings with his right hand. I am reaching out to this site to see if you can design a tool that allows my dad to strum a guitar again.</p>
-                    <h3 class="pt-3">Persona</h3>
+                    <p class="m-0">My dad loved playing guitar and he suffered a Traumatic Brain Injury (TBI) and lost functioning of his right wrist. He still can play all the chords with his left hand but cannot strum the strings with his right hand. I am reaching out to this site to see if you can design a tool that allows my dad to strum a guitar again.</p>
+                    <h3 class="pt-5">Persona</h3>
                     <div class="d-flex gap-3">
                         <div>
                             <p><strong>Louis Matthews, 51</strong></p>
@@ -50,13 +50,14 @@
                             <p><strong>Frustrations:</strong><br>He still has the ability to play chords with his left hand, however he’s unable to move his right arm/hand in order to strum the guitar. The feeling of being able to reach the strings and chords on the guitar, but totally losing the ability to produce sound.</p>
                         </div>
                     </div>
-                    <h3 class="pt-3">Material</h3>
+                    <img src="img/persona.jpg" class="img-fluid">
+                    <h3 class="pt-5">Material</h3>
                     <img src="img/material-poster.jpg" class="img-fluid">
                 </div>
                 <p class="text__background">background</p>
             </div>
         </div>
-        <div class="flex__container flex--blaziken animate--start" data-slide="3">
+        <div class="flex__container flex--three animate--start" data-slide="3">
             <div class="flex__item flex__item--left">
                 <div class="flex__content">
                     <p class="text--sub">timeline</p>
@@ -67,38 +68,42 @@
                 <p class="text__background">timeline</p>
             </div>
         </div>
-        <div class="flex__container flex--dialga animate--start" data-slide="4">
+        <div class="flex__container flex--four animate--start" data-slide="4">
             <div class="flex__item flex__item--left">
                 <div class="flex__content">
-                    <p class="text--sub">to do</p>
-                    <h1 class="text--big">to do</h1>
-                    <p class="text--normal">to do</p>
+                    <p class="text--sub">coming soon</p>
+                    <h1 class="text--big">coming soon</h1>
+                    <p class="text--normal">coming soon</p>
                 </div>
                 <p class="text__background">final</p>
             </div>
         </div>
-        <div class="flex__container flex--zekrom animate--start" data-slide="5">
+        <div class="flex__container flex--five animate--start" data-slide="5">
             <div class="flex__item flex__item--left">
                 <div class="flex__content">
                     <p class="text--sub">team</p>
                     <h1 class="text--big">Our Team</h1>
                     <h5 class="team-name">Team Panda</h5>
-                    <div class="bio text-center mt-3">
-                        <div class="align-items-center">
+                    <div class="row text-center gap-3 mt-3 bio">
+                        <div class="col-5 col-md-4 col-lg-3">
                             <img src="img/ms.jpg" class="rounded-1" width="100">
-                            <p>Michael Song</p>
+                            <p class="fw-bold">Michael Song</p>
+                            <p>Technology</p>
                         </div>
-                        <div class="align-items-center">
+                        <div class="col-5 col-md-4 col-lg-3">
                             <img src="img/lo.jpg" class="rounded-1" width="100">
-                            <p>Lynnsey Ong</p>
+                            <p class="fw-bold">Lynnsey Ong</p>
+                            <p>Production</p>
                         </div>
-                        <div class="align-items-center">
+                        <div class="col-5 col-md-4 col-lg-3">
                             <img src="img/pc.jpg" class="rounded-1" width="100">
-                            <p>Priscilla Cho</p>
+                            <p class="fw-bold">Priscilla Cho</p>
+                            <p>Assembling</p>
                         </div>
-                        <div class="align-items-center">
+                        <div class="col-5 col-md-4 col-lg-3">
                             <img src="img/vn.jpg" class="rounded-1" width="100">
-                            <p>Vera Ni</p>
+                            <p class="fw-bold">Vera Ni</p>
+                            <p>Measuring</p>
                         </div>
                     </div>
                 </div>
@@ -119,6 +124,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="./slider-script.js"></script>
+    <script type="module" src="./timeline-script.js"></script>
 </body>
 
 </html>
