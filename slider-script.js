@@ -13,7 +13,7 @@ $(document).ready(function () {
         console.log(slideValue);
         
         $('.flex__item').removeClass('flex__item--oversize');
-        if (slideValue == 2 || slideValue == 3) {
+        if (slideValue == 2 || slideValue == 3 || slideValue == 4) {
             $('.flex__container[data-slide="' + slideValue + '"] .flex__item').addClass('flex__item--oversize');
         }
 

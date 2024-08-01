@@ -260,6 +260,10 @@ a.icon-link {
 	}
 }
 
+.final-slide img {
+	margin-bottom: 1rem;
+}
+
 /* Animate-START point */
 
 .flex__container.animate--start .flex__content {
